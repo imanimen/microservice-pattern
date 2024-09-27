@@ -17,7 +17,7 @@ func main() {
 			return
 		}
 		// write back to user
-		fmt.Fprintf(writer, "Hello %s\n", data)
+		fmt.Fprintf(writer, "Hello %s\n", data) 
 	})
 	http.HandleFunc("/goodbye", func(writer http.ResponseWriter, request *http.Request) {
 		log.Println("Goodbye World")
