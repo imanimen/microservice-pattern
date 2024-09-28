@@ -8,11 +8,11 @@ import (
 )
 
 type Hello struct {
-	l *log.Logger
+	logger *log.Logger
 }
 
-func NewHello(l *log.Logger) *Hello {
-	return &Hello{l}
+func NewHello(log *log.Logger) *Hello {
+	return &Hello{log}
 }
 
 func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {

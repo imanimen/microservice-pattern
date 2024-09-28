@@ -8,11 +8,11 @@ import (
 )
 
 type Goodbye struct {
-	l *log.Logger
+	logger *log.Logger
 }
 
-func NewGoodbye(l *log.Logger) *Goodbye {
-	return &Goodbye{l}
+func NewGoodbye(log *log.Logger) *Goodbye {
+	return &Goodbye{log}
 }
 
 func (g *Goodbye) ServeHTTP(rw http.ResponseWriter, r *http.Request) {

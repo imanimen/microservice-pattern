@@ -10,8 +10,8 @@ type Products struct {
 }
 
 
-func NewProducts(l *log.Logger) *Products  {
-	return &Products{l}
+func NewProducts(log *log.Logger) *Products  {
+	return &Products{log}
 }
 
 func (p *Products) ServeHTTP(rw http.ResponseWriter, h *http.Request) {
