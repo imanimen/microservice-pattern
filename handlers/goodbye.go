@@ -16,7 +16,7 @@ func NewGoodbye(log *log.Logger) *Goodbye {
 }
 
 func (g *Goodbye) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-	g.l.Println("Goodbye route")
+	g.logger.Println("Goodbye route")
 	data, err := io.ReadAll(r.Body)
 	if err != nil {
 		http.Error(rw, "Oops", http.StatusBadRequest)
