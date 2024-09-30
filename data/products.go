@@ -24,12 +24,12 @@ var productList = []*Product{
 		SKU:         "abc123",
 		CreatedOn:   time.Now().UTC(),
 		UpdatedOn:   time.Now().UTC(),
-		DeletedOn:   nil, // Not deleted, so set to nil
+		DeletedOn:   nil,
 	},
 	&Product{
 		ID:          2, 
 		Name:        "Espresso",
-		Description: "Short and strong coffee without milk", // Fixed typo
+		Description: "Short and strong coffee without milk",
 		Price:       1.99,
 		SKU:         "fjd43",
 		CreatedOn:   time.Now().UTC(),
